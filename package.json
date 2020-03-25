@@ -1,6 +1,6 @@
 {
   "name": "@chromacoma/react-rails-gql-component-generator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generator for React Components within a Rails GraphQL project",
   "main": "index.js",
   "scripts": {

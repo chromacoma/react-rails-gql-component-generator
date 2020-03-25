@@ -12,10 +12,14 @@ if (process.argv.length < 3) {
 const componentPath = process.argv[process.argv.length - 1];
 const conponentParts = componentPath.split("/");
 const componentName = conponentParts.pop();
-const dir = path.join(process.cwd(), ...conponentParts);
+const parentDir = path.join(process.cwd(), ...conponentParts);
+const dir = path.join(process.cwd(), ...conponentParts, componentName);
 
-if (fs.existsSync(dir)) {
-  console.error("Sorry, component", componentPath, "already exists. Exiting...");
+if (!fs.existsSync(parentDir)) {
+  console.error("Sorry, parent directory ", parentDir, "doesn't exist. Exiting...");
+  process.exit(1);
+} else if (fs.existsSync(dir)) {
+  console.error("Sorry, component", dir, "already exists. Exiting...");
   process.exit(1);
 } else {
   fs.mkdirSync(dir);
