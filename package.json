@@ -1,0 +1,28 @@
+{
+  "name": "@chromacoma/react-rails-gql-component-generator",
+  "version": "1.0.2",
+  "description": "Generator for React Components within a Rails GraphQL project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chromacoma/react-rails-gql-component-generator.git"
+  },
+  "keywords": [
+    "Ruby",
+    "Rails",
+    "GraphQL",
+    "React"
+  ],
+  "author": "John Adair <john@minml.net> (https://minml.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chromacoma/react-rails-gql-component-generator/issues"
+  },
+  "homepage": "https://github.com/chromacoma/react-rails-gql-component-generator#readme"
+}
